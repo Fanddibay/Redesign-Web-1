@@ -21,23 +21,227 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="bg-custom-1">
+
+  <body class="bg-custom-1" style="margin: 0" onload="myFunction()">
+    <div id="loader"></div>
     <!-- header -->
-    <nav class="navbar navbar-light bg-warning">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="/src/assets/logo.png"
-            alt=""
-            width="200"
-            height="auto"
-            class="d-inline-block align-text-top ima-fluid"
-          />
-        </a>
+
+    <div class="animate-bottom" id="myDiv" style="display: none">
+      <!-- section hero -->
+      <section class="jumbotron">
+        <nav>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <h5 class="text-white h4">Collapsed content</h5>
+              <span class="text-muted">Toggleable via the navbar brand.</span>
+              <hr />
+            </div>
+          </div>
+          <div class="navbar navbar-dark bg-transparent">
+            <div class="container sticky-top">
+              <a class="navbar-brand float-start" href="#">
+                <img
+                  src="/src/assets/logo.png"
+                  alt=""
+                  width="200"
+                  height="auto"
+                />
+              </a>
+              <button
+                class="navbar-toggler bg-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="container mtc-1">
+          <div class="row text-lg-start text-center">
+            <div class="col-lg-6 text-white">
+              <h1 class="fw-bold fs-1">
+                FINALLY GET RESULTS ONLINE... <br />
+                NO FUNNEL? NO EMAIL LIST? NO ADS? NO PROBLEM!
+              </h1>
+              <p class="fw-bolder fs-3 y mt-5 text-capitalize">
+                #1 Challenge Expert Pedro Adao shares all his secrets for how he
+                has crushed 47 profitable challenges in a row since may of
+                2018...
+              </p>
+              <div class="mtc-1"></div>
+            </div>
+            <div class="col-lg-6"></div>
+          </div>
+        </div>
+      </section>
+      <!-- end section hero -->
+
+      <div
+        class="
+          container
+          mtc-1
+          justify-content-center
+          text-center
+          bg-light
+          p-lg-3
+          rounded-3
+        "
+      >
+        <h2 class="fw-bold fs--2 text-dark mt-lg-5 pt-lg-4 pt-5 mt-sm-1">
+          Now Is The Best Time To Launch Grow Or Scale <br />
+          Your Business Online With Crush It With Challenges...
+        </h2>
+        <div class="row">
+          <div class="col-lg-6 mt-4">
+            <img src="/src/assets/content-1.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-6">
+            <div class="mt-5">
+              <h3 class="bg-custom-5 p-4">ONLY 6 Payments Of $395 Or $1995!</h3>
+              <h5 class="bg-dark text-white p-3">
+                Everything You Will Receive:
+              </h5>
+            </div>
+            <ul class="text-start mt-4 fs-4" type="checked">
+              <li type="square">
+                Lifetime Access To Crush It With Challenges Program ($4,995
+                Value)
+              </li>
+              <li type="square">
+                The Ultimate Niche Finder: Challenge Worksheet ($995 Value)
+              </li>
+              <li type="square">
+                The Ultimate Offer Design: Challenge Worksheet ($995 Value)
+              </li>
+              <li type="square">
+                ​Challenge Traffic Mastery: Filling your Challenges with Paid &
+                Organic Traffic with Kasim Aslam and Rachel Miller ($2,995
+                Value)
+              </li>
+              <li type="square">
+                ​Seven-Figure Challenge Funnel Templates ($4,995 Value)
+              </li>
+              <li type="square">
+                ​​Turnkey Challenge Graphic Templates & Customizable Facebook
+                Group Cover Photo ($495 Value)
+              </li>
+              <li type="square">
+                Crush It With Your First Live Event Training with Bari
+                Baumgardner ($995 Value)
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div class="justify-content-center mt-5">
+            <h1 class="fw-bolder text-uppercase">
+              Get <u>LIFETIME ACCESS</u> To Crush It With <br />
+              Challenges 2021 And Amazing Bonuses!
+            </h1>
+          </div>
+          <div class="row justify-content-center">
+            <a
+              href=""
+              class="
+                col-lg-8
+                mt-5
+                bg-custom-6
+                rounded-3
+                p-3 p-lg-5
+                text-white
+                fw-bold
+                fs-2
+                align-items-center
+                justify-content-center
+                text-decoration-none text-uppercase
+                jumbotron-content
+              "
+              style="box-shadow: 10px 10px rgb(201, 201, 201)"
+            >
+              yes! im ready to crush 2021 with challenges <br />
+              <span class="fw-light text-muted fs-6">
+                Click here to secure your spot & exclusive bonuses now!</span
+              >
+            </a>
+            <p class="fs-4 fw-bold mt-4">
+              Need Payment?
+              <span class="text-muted"
+                >Click Here for 6 Payments of Only $395</span
+              >
+            </p>
+          </div>
+        </div>
       </div>
-    </nav>
+
+      <section class="container-fluid mt-5">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#e85d04"
+            fill-opacity="1"
+            d="M0,96L34.3,90.7C68.6,85,137,75,206,101.3C274.3,128,343,192,411,208C480,224,549,192,617,165.3C685.7,139,754,117,823,122.7C891.4,128,960,160,1029,160C1097.1,160,1166,128,1234,122.7C1302.9,117,1371,139,1406,149.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+          ></path>
+        </svg>
+        <div class="row bg-custom-4">
+          <div class="col justify-content-center">
+            <p>
+              <a
+                href="https://wistia.com/about-wistia?utm_type=player&amp;utm_product=host&amp;utm_campaign=songs-about-wistia&amp;utm_medium=referral&amp;utm_source=wistia&amp;about=842316&amp;wvideo=0j69dfdsq4"
+                ><img
+                  class="img-fluid mt-5 rounded-3"
+                  src="https://embed-fastly.wistia.com/deliveries/b58ea4360b39c30ce5425bbbfd08fe0e8fd7caf1.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=4074e1e0"
+              /></a>
+            </p>
+            <h2 class="fw-bold text-capitalize ls-3 fs-1 mt-4 text-white">
+              INDUSTRY LEGENDS OF OUR TIME
+            </h2>
+            <div>
+              <p
+                class="
+                  bg-white
+                  m-5
+                  rounded-3
+                  text-dark
+                  fw-bold
+                  p-4
+                  justify-content-xl-center
+                  fs-3
+                "
+              >
+                ...Use Pedro Adao's Crush It WIth Challenges Model To <br />
+                Take Their Businesses To New Levels Of Success
+              </p>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#e85d04"
+            fill-opacity="1"
+            d="M0,160L40,154.7C80,149,160,139,240,138.7C320,139,400,149,480,138.7C560,128,640,96,720,106.7C800,117,880,171,960,192C1040,213,1120,203,1200,181.3C1280,160,1360,128,1400,112L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+          ></path>
+        </svg>
+      </section>
+    </div>
+
     <!-- end header -->
 
+    <!-- manual script -->
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 100);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
     <!-- link script main js -->
     <script src="/src/script/index.js"></script>
     <!-- linl scro[t js bootstrap] -->
