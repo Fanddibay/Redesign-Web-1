@@ -36,6 +36,10 @@ svg {
   background-color: #faa307;
 }
 
+.box-shadow-1 {
+  box-shadow: 8px 8px rgb(192, 192, 192);
+}
+
 .bg-custom-1g {
   background: rgb(232, 93, 4);
   background: radial-gradient(
@@ -56,7 +60,40 @@ svg {
   );
 }
 
-.bg-custom-2g:hover {
+/* hover background */
+
+.bg-custom-1gh {
+  background: rgb(232, 93, 4);
+  background: radial-gradient(
+    circle,
+    rgba(232, 93, 4, 1) 0%,
+    rgba(244, 140, 6, 1) 35%,
+    rgba(232, 93, 4, 1) 100%
+  );
+}
+
+.bg-custom-1gh:hover {
+  background: rgb(172, 70, 6);
+  background: radial-gradient(
+    circle,
+    rgb(221, 93, 14) 0%,
+    rgb(206, 118, 4) 35%,
+    rgb(250, 115, 32) 100%
+  );
+  transform: scale(1, 1.1);
+}
+
+.bg-custom-2gh {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.bg-custom-2gh:hover {
   background: rgb(131, 58, 180);
   background: linear-gradient(
     90deg,
@@ -83,30 +120,15 @@ svg {
 }
 
 /* custom margin */
-.mtc-1 {
-  margin-top: 14rem;
-}
 
 /* latter spacing */
-.ls-1 {
-  letter-spacing: 2px;
-}
 
-.ls-2 {
-  letter-spacing: 3px;
-}
-
-.ls-3 {
-  letter-spacing: 4px;
-}
-
-.ls-4 {
-  letter-spacing: 5px;
+.z-index-1 {
+  z-index: 4;
 }
 
 hr {
   color: #fff;
-  width: 2rem;
 }
 
 /* add class */
@@ -197,5 +219,88 @@ hr {
     justify-content: center;
     align-items: center;
     margin-left: 20px;
+  }
+
+  .mtc-2 {
+    margin-top: 4rem;
+  }
+
+  .fsc-1 {
+    font-size: 36px;
+  }
+
+  .fsc-2 {
+    font-size: 28px;
+  }
+
+  .fsc-3 {
+    font-size: 24px;
+  }
+
+  .fsc-4 {
+    font-size: 18px;
+  }
+
+  .fsc-5 {
+    font-size: 12px;
+  }
+
+  .fsc-6 {
+    font-size: 8px;
+  }
+
+  .mtc-1 {
+    margin-top: 1rem;
+  }
+}
+
+/* windows style */
+@media screen and (min-width: 994px) {
+  .mr-1 {
+    margin-right: 0.5rem;
+  }
+
+  .mr-2 {
+    margin-right: 1.25rem;
+  }
+
+  .mr-3 {
+    margin-right: 2rem;
+  }
+
+  .mr-4 {
+    margin-right: 4rem;
+  }
+
+  .mr-5 {
+    margin-right: 6rem;
+  }
+
+  .-mt-1 {
+    margin-top: -25rem;
+  }
+
+  .ls-1 {
+    letter-spacing: 2px;
+  }
+
+  .ls-2 {
+    letter-spacing: 3px;
+  }
+
+  .ls-3 {
+    letter-spacing: 4px;
+  }
+
+  .ls-4 {
+    letter-spacing: 5px;
+  }
+
+  .mtc-1 {
+    margin-top: 12rem;
+  }
+
+  .border-dashed {
+    border: 3px dashed gray;
   }
 }
