@@ -36,6 +36,37 @@ svg {
   background-color: #faa307;
 }
 
+.bg-custom-1g {
+  background: rgb(232, 93, 4);
+  background: radial-gradient(
+    circle,
+    rgba(232, 93, 4, 1) 0%,
+    rgba(244, 140, 6, 1) 35%,
+    rgba(232, 93, 4, 1) 100%
+  );
+}
+
+.bg-custom-2g {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.bg-custom-2g:hover {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgb(190, 96, 252) 0%,
+    rgb(248, 80, 80) 50%,
+    rgb(255, 191, 103) 100%
+  );
+  transform: scale(1.1);
+}
+
 .bg-custom-6:hover {
   background-color: #ffb731;
   border-radius: 20px;
@@ -86,7 +117,6 @@ hr {
   height: 100% !important;
   object-fit: cover;
   opacity: 1;
-
   box-shadow: 0 0 5px 2px #282a2d;
 }
 
