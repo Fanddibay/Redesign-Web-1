@@ -152,6 +152,48 @@ hr {
   box-shadow: 0 0 5px 2px #282a2d;
 }
 
+/* add overlay image */
+.containerImage {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlayImage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 97.5%;
+  width: 97.5%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #f0f0f0;
+}
+
+.containerImage:hover .overlayImage {
+  opacity: 0.7;
+}
+
+.textImage {
+  color: rgb(70, 70, 70);
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
+}
+
 /* main style */
 #loader {
   position: absolute;
@@ -232,6 +274,18 @@ hr {
 
 /* mobile style */
 @media screen and (max-width: 994px) {
+  .textImage {
+    color: rgb(70, 70, 70);
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+  }
   .jumbotron-content {
     justify-content: center;
     align-items: center;
