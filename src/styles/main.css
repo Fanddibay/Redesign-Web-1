@@ -60,6 +60,16 @@ svg {
   );
 }
 
+.bg-custom-3g {
+  background-color: #f48c06;
+}
+
+.bg-custom-3g:hover {
+  background-color: #fd9e20;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
 /* hover background */
 
 .bg-custom-1gh {
@@ -211,6 +221,13 @@ hr {
 #myDiv {
   display: none;
   text-align: center;
+}
+
+#moreTextMB {
+  display: none;
+}
+#moreTextDK {
+  display: none;
 }
 
 /* mobile style */
