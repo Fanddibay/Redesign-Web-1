@@ -54,3 +54,19 @@ function toggleTextDK() {
     buttonText.innerHTML = "Show Less";
   }
 }
+
+// navbar custom js
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    document.getElementById("drop-fixed").style.display = "block";
+  } else {
+    document.getElementById("drop-fixed").style.display = "none";
+  }
+}
